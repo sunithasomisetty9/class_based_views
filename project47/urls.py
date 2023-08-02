@@ -31,6 +31,12 @@ urlpatterns = [
 
     path('render_url/',TemplateView.as_view(template_name='render_url.html'),name='render_url'),
 
+    path('TempDataRender/',TempDataRender.as_view(),name='TempDataRender'),
+
+    path('TempInsertForm/',TempInsertForm.as_view(),name='TempInsertForm'),
+
+    path('FormInsert/',FormInsert.as_view(),name='FormInsert'),
+
 
 
 ]
