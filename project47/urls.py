@@ -37,6 +37,6 @@ urlpatterns = [
 
     path('FormInsert/',FormInsert.as_view(),name='FormInsert'),
 
-
+    path('Trainers_List/',Trainers_List.as_view(),name='Trainers_List'),
 
 ]

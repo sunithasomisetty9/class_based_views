@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List View class</title>
+</head>
+<body>
+        <center>
+            <h1>trainers_list</h1>
+                {% for i in tl %}
+
+                    <a href="{{i.tname}}"><h1>{{i.tname}}</h1></a>
+                {% endfor %}
+        </center>
+</body>
+</html>

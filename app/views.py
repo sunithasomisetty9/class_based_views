@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.views.generic import View, TemplateView, FormView
+from django.views.generic import View, TemplateView, FormView, ListView
 from app.forms import *
-
+from app.models import *
 # Create your views here.
 def fbv_string(request):
     return HttpResponse("<h1>This is function based view for returning string as a response</h1>")
@@ -85,3 +85,12 @@ class FormInsert(FormView):
     def form_valid(self,form):
         form.save()
         return HttpResponse('Data inserted successfully')
+
+
+class Trainers_List(ListView):
+    model=Trainer
+    template_name='Trainers_List.html'
+    context_object_name='tl'
+    ordering=['tname']
+    
+

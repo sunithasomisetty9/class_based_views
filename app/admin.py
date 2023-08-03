@@ -4,3 +4,4 @@ from app.models import *
 
 admin.site.register(Movie)
 admin.site.register(Student)
+admin.site.register(Trainer)
